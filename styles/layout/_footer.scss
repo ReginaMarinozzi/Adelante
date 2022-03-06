@@ -1,0 +1,100 @@
+// Variables ----------------------------->
+
+@import "../base/variables";
+
+// Mixin ------------------------->
+
+@import "../base/mixins";
+
+// Footer ------------------------------>
+
+#footer {
+  background-color: $color1;
+  @include title-p($general-font, $size-10, 400, $color2);
+  @include display(flex, space-between, flex-start, row nowrap);
+  padding: 4em 5em;
+  border-top: 1px solid #353535;
+
+  .column-footer-one {
+    .logo {
+      padding-bottom: 1em;
+      a {
+        img {
+          width: 150px;
+        }
+      }
+    }
+    .paragraph-footer {
+      p {
+        @include title-p($general-font, $size-10, 400, $color2);
+      }
+    }
+  }
+
+  .column-footer-two {
+    @include display(flex, center, center, column nowrap);
+    .footer-contacto {
+      .h4-title {
+        @include title-p($general-font, $size-9, 500, $color2);
+        padding-bottom: 1em;
+      }
+    }
+    .paragraph-footer-2 {
+      p {
+        @include title-p($general-font, $size-9, 400, $color2);
+      }
+    }
+  }
+
+  .column-footer-three {
+    .footer-unidades {
+      .h4-title {
+        @include title-p($general-font, $size-9, 500, $color2);
+        padding-bottom: 1em;
+      }
+    }
+    .footer-list {
+      ul {
+        @include display(flex, center, center, column nowrap);
+        padding: 10px;
+        .list-footer {
+          list-style: none;
+          a {
+            text-decoration: none;
+            color: $color2;
+
+            &:hover {
+              color: $color3;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .column-footer-four {
+    div {
+      .h4-title {
+        @include title-p($general-font, $size-9, 500, $color2);
+        padding-bottom: 1em;
+      }
+    }
+    .icon-redes {
+      @include display(flex, space-evenly, center, column nowrap);
+
+      a {
+        color: $color2;
+        text-decoration: none;
+        font-size: 2em;
+        .icon-insta,
+        .icon-fb {
+          &:hover {
+            color: $color3;
+            transform: scale(1.2);
+            transition: all 0.5s;
+          }
+        }
+      }
+    }
+  }
+}

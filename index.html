@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Link favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./src/assets/fotos/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./src/assets/fotos/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/fotos/favicon-16x16.png" />
+
+  <!-- CDN Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles/styles.css" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/9b373d20d4.js" crossorigin="anonymous"></script>
+
+  <title>Grupo Adelante</title>
+
+  <!-- Typewriter effect  -->
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+</head>
+
+<body>
+  <!-- Cabecera -->
+  <header id="header-index">
+    <!-- Video de fondo -->
+    <div id="fondo-video">
+      <video poster="./src/assets/fotos/quienes.png" autoplay="" muted="" loop="">
+        <source src="./src/assets/videos/presentacion.webm" type="video/webm" />
+      </video>
+    </div>
+    <!-- Capa de opacidad -->
+    <div class="capa-opaca"></div>
+    <!-- Texto encima del video -->
+    <div class="text-box">
+      <div>
+        <h1 class="h1-title">Somos especialistas en <br></h1>
+        <div id="app"></div>
+      </div>
+    </div>
+
+    <!-- Al hacer click en el logo te lleva a la página principal -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="nav-general">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"><img id="logo" src="./src/assets/fotos/logo.png"
+            alt="logo de Grupo Adelante" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item navbar-color-item">
+              <a class="nav-link" href="./src/pages/inmobiliaria.html">Inversiones</a>
+            </li>
+            <li class="nav-item navbar-color-item">
+              <a class="nav-link" href="./src/pages/desarroladora.html">Comercialización</a>
+            </li>
+            <li class="nav-item navbar-color-item">
+              <a class="nav-link" href="./src/pages/nosotros.html">Desarollos</a>
+            </li>
+            <li class="nav-item navbar-color-item">
+              <a class="nav-link" href="./src/pages/nosotros.html">Consultoría</a>
+            </li>
+            <li class="nav-item navbar-color-item">
+              <a class="nav-link customized-link" href="./src/pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Fin de cabecera -->
+
+  <main>
+
+    <section class="servicios">
+      <h2 class="h2-title">Nuestros servicios</h2>
+      <div class="row">
+        <div class="servicio-col">
+          <h4 class="h4-title">
+            <a href="#inversion-container">Inversiones</a>
+          </h4>
+        </div>
+
+
+        <div class="servicio-col">
+          <h4 class="h4-title">
+            <a href="#comercializacion-container">Comercialización</a>
+          </h4>
+        </div>
+
+
+        <div class="servicio-col">
+          <h4 class="h4-title">
+            <a href="#">Desarrollos</a>
+          </h4>
+        </div>
+
+
+
+        <div class="servicio-col">
+          <h4 class="h4-title">
+            <a href="#consultoria-container">Consultoría</a>
+          </h4>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="inversion-container">
+
+      <div class="row align-items-center justify-content-center">
+
+        <div class="texto-inver col-md-6">
+
+          <h2 class="h2-title">Inversiones</h2>
+          <p>Conocé las distintas opciones de inversión inmobiliaria en el mercado de Rosario.</p>
+
+          <button class="customized-link">Conoce más</button>
+        </div>
+
+        <div class="inver-column-container col-md-6">
+
+          <div class="row container-inver">
+
+            <div class="inver-column col-md-6">
+
+              <div class="inversiones-col">
+                <img src="./src/assets/fotos/edi9.svg" alt="">
+                <div class="layer">
+                  <p>Emprendimientos</p>
+                </div>
+
+              </div>
+
+              <div class="inversiones-col">
+                <img src="./src/assets/fotos/foto6.jpg" alt="">
+                <div class="layer">
+                  <p>Pool de inversiones</p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="inver-column col-md-6">
+
+              <div class="inversiones-col">
+                <img src="./src/assets/fotos/foto5.jpg" alt="">
+                <div class="layer">
+                  <p>Proyectos</p>
+                </div>
+
+              </div>
+
+              <div class="inversiones-col">
+                <img id="novedades" src="./src/assets/fotos/edi6.svg" alt="">
+                <div class="layer">
+                  <p>Novedades</p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="comercializacion-container">
+
+      <div class="row align-items-center justify-content-center">
+
+        <div class="comer-column-container col-md-6">
+
+          <div class="row container-inver">
+
+            <div class="comer-column col-md-6">
+
+              <div class="comercializacion-col">
+
+                <img src="./src/assets/fotos/foto1.jpg" alt="">
+                <div class="layer">
+                  <p>Encontramos tu hogar</p>
+                </div>
+
+              </div>
+
+              <div class="comercializacion-col">
+
+                <img src="./src/assets/fotos/Living-1.jpg" alt="">
+
+                <div class="layer">
+                  <p>Nuestros desarrollos</p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="comer-column col-md-6">
+
+              <div class="comercializacion-col">
+
+                <img src="./src/assets/fotos/living-2.jpg" alt="">
+
+                <div class="layer">
+                  <p>Adelante renew!</p>
+                </div>
+
+              </div>
+
+              <div class="comercializacion-col">
+
+                <img src="./src/assets/fotos/foto3.jpg" alt="">
+
+                <div class="layer">
+                  <p>Vendemos tu propiedad</p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="texto-comer col-md-6">
+
+          <h2 class="h2-title">Comercialización</h2>
+          <p>Recibí nuestro acompañamiento personalizado para encontrar tu hogar o vender rápido tu propiedad.
+          </p>
+          <button class="customized-link">Conoce más</button>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="consultoria-container">
+
+      <div class="consul-container row align-items-center justify-content-center">
+
+        <div class="texto-consul col-md-6">
+
+          <h2 class="h2-title">Consultoría</h2>
+          <p>Potencia los resultados de tu inmobiliaria o desarrolladora desde nuestra formación a líderes y fuerzas de ventas.</p>
+          <button class="customized-link">Conoce más</button>
+        </div>
+
+        <div class="consul-column-container col-md-6">
+
+          <div class="row column-row-consul">
+
+            <div class="col-md-6 col-consul">
+
+              <div class="consultoria-col">
+                <img src="./src/assets/fotos/consul3.jpg" alt="">
+                <div class="layer">
+                  <p>Asesoramiento</p>
+                </div>
+
+              </div>
+
+              <div class="consultoria-col">
+                <img src="./src/assets/fotos/consu2.jpg" alt="">
+                <div class="layer">
+                  <p>Consultoría para inmobiliarias</p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-md-6 col-consul">
+
+              <div class="consultoria-col">
+                <img src="./src/assets/fotos/consulttt.jpg" alt="">
+                <div class="layer">
+                  <p>Coaching</p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="novedades-container">
+
+      <h3 class="h3-title">Novedades Adelante:</h3>
+
+      <div class="row novedades-div-container">
+
+        <div class="col-md-8 nov-col">
+
+          <div class="nov-col1">
+            <video src="./src/assets/videos/paddock.mp4" autoplay controls muted preload="auto"
+              poster="./src/assets/fotos/oficinas.png"></video>
+          </div>
+
+          <div class="row nov-col2">
+
+            <div class="col-md-6 nov-col22">
+              <p>Puntobiz</p>
+              <a href="https://puntobiz.com.ar/negocios/la-joven-empresa-rosarina-que-salto-a-las-camisetas-de-newell-s-y-central-20217171900"
+                title="Adelante NOB y CENTRAL" target="_blank">
+                <img src="./src/assets/fotos/adelantenobycentral.jpg" alt="">
+                <p>17 de julio de 2021
+                  <br>
+                  <br>
+                  La joven empresa rosarina que saltó a las camisetas de Newell's y Central
+                </p>
+              </a>
+            </div>
+
+            <div class="col-md-6 nov-col23">
+              <p>Rosario Central</p>
+              <a href="https://rosariocentral.com/noticia/adelante-broker-inmobiliario-es-nuevo-sponsor-del-club/"
+                title="Adelante CENTRAL" target="_blank">
+                <img src="./src/assets/fotos/adelantecentral.jpg" alt="">
+                <p>7 de julio de 2021
+                  <br>
+                  <br>
+                  ADELANTE Broker Inmobiliario es nuevo sponsor del Club
+                </p>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-4 nov-col-2">
+          <p>La capital</p>
+          <a href="https://www.lacapital.com.ar/torneo-golf-paddock-condominios-fisherton-y-adelante-broker-inmobiliario-n2697366.html"
+            title="Adelante Paddock" target="_blank">
+            <img src="./src/assets/fotos/Paddock1.jpeg" alt="">
+            <p>1 de noviembre 2021
+              <br>
+              <br>
+              Torneo de golf "Paddock Condominios Fisherton y Adelante Broker inmobiliario"
+            </p>
+            <img src="./src/assets/fotos/Paddock2.jpeg" alt="">
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Acá empieza el footer -->
+  <footer id="footer">
+    <!-- El footer esta dividido en tres partes, tres columnas -->
+    <!-- Columna de logo  -->
+    <div class="column-footer-one">
+      <!-- Acá cliquenado en el logo te lleva siempre a index -->
+      <div class="logo">
+        <a href="./index.html"><img src="./src/assets/fotos/logo.png" alt="logo de Grupo Adelnte" /></a>
+      </div>
+      <div class="paragraph-footer">
+        <p>
+          ADELANTE © 2021
+          <br />
+          Todos los derechos reservados
+          <br />
+          Mercedes Cámpora Mat. 1730
+        </p>
+      </div>
+    </div>
+    <!-- Columna de información de contacto -->
+    <div class="column-footer-two">
+      <div class="footer-contacto">
+        <h4 class="h4-title">Contacto</h4>
+      </div>
+      <div class="paragraph-footer-2">
+        <p>
+          Dirección: Avenida Luis Candido
+          <br />
+          Carballo 128, planta baja E4 L1
+          <br />
+          Teléfono: +54 341 5902111
+          <br />
+          adelantebroker@gmail.com
+          <br />
+        </p>
+      </div>
+    </div>
+    <!-- Columna de unidades de negocios -->
+    <div class="column-footer-three">
+      <div class="footer-unidades">
+        <h4 class="h4-title">Unidades de negocios</h4>
+      </div>
+      <div class="footer-list">
+        <ul>
+          <li class="list-footer">
+            <a href="./src/pages/inmobiliaria.html">Inversiones</a>
+          </li>
+          <li class="list-footer">
+            <a href="./src/pages/desarroladora.html">Comercialización</a>
+          </li>
+          <li class="list-footer">
+            <a href="./src/pages/financiera.html">Desarollos</a>
+          </li>
+          <li class="list-footer">
+            <a href="./src/pages/financiera.html">Consultoría</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Columna de redes -->
+    <div class="column-footer-four">
+      <div>
+        <h4 class="h4-title">Nuestras redes</h4>
+      </div>
+      <div class="icon-redes">
+        <a href="https://www.instagram.com/adelantebroker" target="_blank">
+          <i class="fab fa-instagram icon-insta"></i>
+        </a>
+        <a href="https://www.facebook.com/adelante.broker" target="_blank">
+          <i class="fab fa-facebook icon-fb"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <!-- Fin del footer -->
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Typewriter effet - Javascrip -->
+  <script>
+
+    var app = document.getElementById('app');
+
+    var typewriter = new Typewriter(app, {
+        loop: true,
+        delay: 60,
+    });
+
+    typewriter
+
+        .pauseFor(1500)
+        .typeString('<strong>inversiones inmobiliarias</strong>')
+        .pauseFor(1500)
+        .deleteChars(25)
+        .typeString('<strong>comercialización</strong>')
+        .pauseFor(1500)
+        .deleteChars(16)
+        .typeString('<strong>desarrollos</strong>')
+        .pauseFor(1500)
+        .deleteChars(11)
+        .typeString('<strong>consultoría</strong>')
+        .pauseFor(1500)
+        .deleteChars(11)
+        .start();
+
+</script>
+</body>
+
+</html>
